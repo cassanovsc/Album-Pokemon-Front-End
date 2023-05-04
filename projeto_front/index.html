@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Album Pokémon</title>
+</head>
+
+<body>
+<div class="container">
+    
+     <!-- Cabeçalho do Álbum -->
+    <header>
+        <div class="title">
+            <h2>Álbum Pokémon</h2>
+        </div>
+    </header>
+
+    <!-- Área de pacote de figutinhas -->
+    <section>
+        <div id="pokebola" class = "pokebolaAvailable" onclick="getPacotePokemon(5)">
+        </div>
+        <div class = 'tips'>
+            <p id="tipPokebola" class = 'showDisplay'>Clique na Pokébola para obter Pokémons</p>
+            <p id="tipCard" class = 'hideDisplay'>Interaja com os cards passando o mouse sobre eles</p>
+        </div>
+        
+        <div class="pacoteFigurinhas">
+            <div class="grid">
+
+                <div class="column">
+                </div>
+            
+                <div class="column">
+                </div>
+
+                <div class="column">
+                </div>
+
+                <div class="column">
+                </div>
+
+                <div class="column">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabela do álbum -->
+    <section class="album-pokemons">
+        <table id="album-table">
+           
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</div>
+</body>
+
+</html>
+
+

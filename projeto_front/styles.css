@@ -1,0 +1,270 @@
+:root {
+    --grama: rgb(106, 236, 106);
+    --fogo: rgb(241, 82, 82);
+    --agua: rgb(67, 186, 233);
+    --geral: rgb(211, 211, 211);
+}
+
+body,
+ul,
+li {
+    font-family: tahoma;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 70vw;
+    background-color: rgb(231, 73, 73);
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-color: rgb(66, 59, 59);
+    border-right-color: rgb(66, 59, 59);
+    border-width: 0px 20px;
+    border-bottom: 50px;
+}
+
+.pacoteFigurinhas > ul > li {
+    display: inline-block;
+}
+
+header {
+    /*background-color: rgb(231, 48, 48);*/
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.title {
+    color: white;
+    width: 100%;
+    display: inline-block;
+    padding: 2px 0px;
+    position: sticky;
+    top: 0px;
+}
+
+#pokebola {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(img/pokeball.png);
+    color: #000;
+    background-size: 100%;
+}
+
+.pokebolaAvailable {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.pokebolaUnavailable {
+    opacity: 0.7;
+    cursor: context-menu;
+}
+
+.showDisplay {
+    display: block;
+}
+
+.hideDisplay {
+    display: none;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 22px;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+
+tr:nth-child(odd){
+    background-color: #f5bfbf;
+}
+
+tr:nth-child(even){
+    background-color: #fdfdfd;
+}
+
+td:nth-child(1){
+    width: 10%;
+}
+
+.imgTable {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+td:nth-child(2){
+    width: 10%;
+}
+td:nth-child(3){
+    width: 40%;
+}
+td:nth-child(4){
+    width: 35%;
+}
+td:nth-child(5){
+    width: 5%;
+    text-align: center;
+}
+td:nth-child(5):hover{
+    width: 5%;
+    color: red;
+}
+
+tr:hover {
+    background: rgb(214, 214, 214);
+}
+
+.removeAvailable {
+    cursor: pointer;
+}
+
+.column {
+    width: 165px;
+    padding: 0 10px;
+  }
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    height: 220px;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    background-color: #c2c2c2;
+    height:180px;
+    cursor: pointer;
+  }
+
+  .card .img-pokemon {
+    border-radius: 25px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .card .img-pokemon .img-center {
+    max-width:90%;
+    max-height:90%;
+  }
+
+  .card .img-pokemon img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .card .tipos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .card .tipos p {
+    margin: 0 4px;
+    padding: 4px;
+    font-size: 12px;
+    background: var(--geral);
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+  }
+
+  .card h3 {
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+
+
+.action-card {
+    position:relative;
+    height: 200px;
+    width: 165px;
+    bottom: 188px;
+    right: 10px;
+    border-radius: 25px;
+    opacity: 0;
+    transition: 0.5s;display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.new_pokemon {
+    background-color: rgba(14, 172, 67, 0.9);
+}
+
+.repeated_pokemon {
+    background-color: rgba(172, 38, 14, 0.9);
+}
+
+
+.card:hover .action-card {
+    opacity: 1;
+  }
+
+.tips p {
+    font-size: 20px;
+    color: white;
+}
+
+.tips .tip-card {
+    display: none;
+}
+
+.album-pokemons {
+    padding: 50px;
+}
+
+#album-table {
+    width: 100%;
+}
+
+#album-table td {
+    height: 85px;
+}
+#album-table td img {
+    display: block;
+    width: 100%;
+    max-height: 60px;
+    margin: auto;
+ 
+}
